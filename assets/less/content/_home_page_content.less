@@ -15,7 +15,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-// minxin flex
+// mixin flex
   .flex(@align: flex-start; @justify: flex-start; @wrap: nowrap; @direction:row ){
       display: flex;
       align-items: @align;
@@ -47,7 +47,7 @@ ul {
 
 /* Section Header*/
 .header {
-    background: url('/assets/images/banner-1.png') no-repeat;
+    background: url('/project_theme/assets/images/banner-1.png') no-repeat;
     position: relative;     
     height: 950px;
 
@@ -60,7 +60,8 @@ ul {
                 position: relative;
                 z-index: 10;
                 .flex(center; space-between; wrap; row);
-                height: 100px;                           
+                height: 100px;
+               // margin-top: -21px;                           
                 
                 .logo {
                    width: 200px;
