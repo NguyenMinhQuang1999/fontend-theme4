@@ -46,7 +46,7 @@ ul {
 
 /* Section Header*/
 .header {
-    background: url('/assets/images/banner-1.png') no-repeat;
+    background: url('/project_theme/assets/images/banner-1.png') no-repeat;
     position: relative;     
     height: 950px;
 
@@ -71,23 +71,25 @@ ul {
    
                 .navbar ul {
                     .flex(center; center; nowrap; row);
-                    list-style-type: none;
+                  //  list-style-type: none;
                     li a {
                         color: @text-white;
-                        margin: 0 26px;
+                        margin: 0 23px;
+                        font-size: 16px;
                     }
                    
                 }
 
                 .header__icon ul {
                     .flex(center; center; wrap; row);
-                    list-style-type: none;
+                   // list-style-type: none;
                     li a {
-                        color: @text-white;                     
+                        color: @text-white;
+                        font-size: 16px;                   
                         
                         i {
                             border-right: 1px solid @text-gray;
-                            padding: 0 24px;
+                            margin: 0 25px;
                             &:last-child {
                                 border-right: none;
                             }
@@ -122,13 +124,19 @@ ul {
    .banner-inner {
       .flex(center);
       .banner__content {
+          margin-top: 0;
+          position: relative;
+          top: -9px;
+          bottom:  -9px;
           h1 {
               font-size: 60px;
               margin-left: -2px;
+              margin-top: -15px;
           }
           h2 {
               font-size: 40px;
               margin-bottom: 16px;
+              margin-top: -9px;
           }
           p {
             width: 532px;
@@ -146,6 +154,7 @@ ul {
             margin-top: 63px;
             cursor: pointer;
             transition: background .5s ease;
+            // margin-left: 1px;
             &:hover{
                 background: @color-red;
             }
@@ -165,7 +174,7 @@ ul {
 
    .banner__image {
        margin-top: 190px;
-       margin-left: 197px;
+       margin-left: 226px;
    }
  
     
@@ -192,20 +201,16 @@ ul {
    .box {
       // display: block;
         background: @text-white;
-         width: 0.333%;        
+        width: 0.333%;        
         width: 390px;
         height: 250px;
         .flex(center; center; wrap; column);
         .image {
-         margin-top: -50px;
-         margin-bottom: 10px;
+         margin-top: -19px;
+         margin-bottom: 15px;
         }
-        .title {
-            
-            text-align: center;
-
-
-            
+        .title {            
+            text-align: center;            
             h2 {
                 color: @color-black;
                 font-size: 18px;
@@ -231,7 +236,7 @@ ul {
 
 /* Section product*/
 .product {
-    margin-top: 100px;
+    margin-top: 13px;
     &__menu {
         ul {
             list-style-type: none;
@@ -241,10 +246,8 @@ ul {
                 font-size: 18px;
                 text-transform: uppercase;
                 color: @color-black;
-                font-weight: 700;
-                padding-right: 19px ;
-                padding-left:19px;
-                padding-bottom: 19px;
+                font-weight: 700;               
+                padding: 0 19px 12px 19px;
                 &.active {
                     color: @color-red;
                     border-bottom: 2px solid @color-red;
@@ -263,11 +266,13 @@ ul {
             margin: 0 -15px;
             .item {
                 width: 270px;
-                height: 320px;
+                height: 330px;
                 margin: 0 15px;
+                margin-bottom: 40px;
                 transition:  transform .5s ease;
                 //padding: 0 15px;
-               // border: 1px solid #dd2f31;
+                // border: 1px solid #dd2f31;
+                // box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 
                 
                 .item-inner {
@@ -280,7 +285,7 @@ ul {
                           right: 20px;
                           top: 0;
                           transition: .5s ease;
-                          opacity:0;
+                          opacity: 0;
                           ul {
                               .flex(center; center; nowrap; column);
                               padding-top: 20px;
@@ -358,7 +363,7 @@ ul {
 
 /* Section comment*/
 .comment {
-    margin-top: 100px;
+    margin-top: 44px;
     text-align: center;
     &__list {
         .comment__title {
@@ -381,13 +386,13 @@ ul {
                 height: 45px;
                 font-size: 18px;
                 line-height: 30px;
-                padding-top: 20px;
+                padding-top: 14px;
              
             }
             .comment__fleeling {
                 font-size: 14px;            
                 color: @text-gray;
-                margin-top:22px ;
+                margin-top: 5px ;
                 padding-bottom: 37px;
             }
             h3 {
@@ -401,10 +406,11 @@ ul {
     
             .comment__user {
                 position: relative;
+
                 width: 80px;
                 height: 80px;
                 border-radius: 50%;
-                margin-top: 50px;
+                margin-top: 43px;
                 overflow: hidden;
                 
                 img {
@@ -428,7 +434,7 @@ ul {
     cursor: pointer;
     height: 10px;
     width: 10px;
-    margin: 0 0 100px 0;
+    margin: 0 0 70px 0;
     background-color: #ccc;
     border-radius: 50%;
     display: inline-block;
@@ -504,6 +510,7 @@ ul {
         &__content {
             .flex(center, space-between, wrap, row);
             .content__column {
+               
                 h3 {
                     text-transform: uppercase;
                     font-size: 18px;
@@ -520,6 +527,19 @@ ul {
                     
                 }                    
             }
+        }
+
+        .account {
+            position: relative;
+            left:-134px;
+        }
+        .infomation {
+            position: relative;
+            left: -140px;
+        }
+        .quicklink {
+            position: relative;
+            left: -222px;
         }
     }
 
